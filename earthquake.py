@@ -22,9 +22,9 @@ with open ('rfc.dat','rb') as f:
 
 if clicked ==True:
     if Latitude==0:
-        print("LATITUDE IS NOT DEFINED")
+        st.header("LATITUDE IS NOT DEFINED")
     elif Longitude==0:
-        print("LONGITUDE IS NOT DEFINED")
+        st.header("LONGITUDE IS NOT DEFINED")
     else:
         data=[Latitude,Longitude]
         print(data)
