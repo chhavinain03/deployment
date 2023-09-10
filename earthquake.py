@@ -26,14 +26,16 @@ if clicked ==True:
     elif Longitude==0:
         st.header("LONGITUDE IS NOT DEFINED")
     else:
-        data=[Latitude,Longitude]
-        print(data)
-        st.header("MAGNITUDE")
-        st.subheader(model[0][0])
-        print(model[0][0])
-        st.header("DEPTH")
-        st.subheader(model[0][1])
-        print(model[0][1])
+       data=[Latitude,Longitude]
+       print(data)
+       pred=model.predict([data])
+       print(pred)
+       st.header("MAGNITUDE")
+       st.subheader(pred[0][0])
+       print(pred[0][0])
+       st.header("DEPTH")
+       st.subheader(pred[0][1])
+       print(pred[0][1])
     
   
     
